@@ -53,9 +53,6 @@ footer {
 }
 
 /* item */
-.item .panel-body {
-  height: 70px;
-}
 
 .item .panel-heading {
   height: 250px;
@@ -74,7 +71,7 @@ p.item-title {
 }
 
 .item .panel-body {
-  height: 120px;
+  height: 150px;
 }
 
 .item .buttons form {
