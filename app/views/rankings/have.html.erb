@@ -1,7 +1,7 @@
-<h1>Wantランキング</h1>
+<h1>Haveランキング</h1>
 <% if @items.present? %>
   <div class="row">
-    <% @items.each_with_index do |item, index| %>
+    <% @items.each_with_index do |item,index| %>
       <div class="item">
         <div class="col-md-3 col-sm-4 col-xs-12">
           <% if index == 0 %>
@@ -10,8 +10,8 @@
           <% color = 'default' %>
           <% end %>
           <div class="panel panel-<%= color %>">
-            <div class="panel-heading text-center">
-              <img src="<%= item.image_url %>" alt="">
+            <div class="panel panel-heading text-center">
+              <img src="<%= item.image_url %>" alt="" >
             </div>
             <div class="panel-body">
               <p class="item-title"><%= link_to item.name, item %></p>
@@ -27,7 +27,7 @@
               </div>
             </div>
             <div class="panel-footer">
-              <p class="text-center"><%= index+1 %>位: <%= @ranking_counts[item.id] %> Wants</p>
+              <p class="text-center"><%= index+1 %>位: <%= @ranking_counts[item.id] %> Have</p>
             </div>
           </div>
         </div>
